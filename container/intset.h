@@ -4,7 +4,7 @@
 class IntSet {
   public:
     // Maximum size of a set.
-    static const int MAX_SIZE = 10;
+    static const int MAX_SIZE;
 
     // EFFECTS:  Initializes this set to be empty.
     IntSet();
@@ -38,6 +38,7 @@ class IntSet {
   private:
     int elements[MAX_SIZE];
     int num_elements;
+
     // INVARIANTS:
     // 0 <= num_elements <= MAX_SIZE
     // the first num_elements items in elements are the items in the set
